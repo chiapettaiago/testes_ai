@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat Interface</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1 class="my-4">Teste com IA</h1>
+    <div class="mt-4">
+        <p><strong>Resposta:</strong></p>
+        <pre>{{ response_text|safe }}</pre><br>
+    </div>
+</div>
+<footer class="footer fixed-bottom">
+    <div class="container">
+        <form method="POST">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="user_input" rows="3" required></textarea>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</footer>
+</body>
+</html>
